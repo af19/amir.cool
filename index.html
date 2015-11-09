@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tony Pushes To The Limit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        setTimeout(function() {
+          $('header, footer').fadeIn(2000);
+        }, 1000);
+      });
+    </script>
+    <style media="screen">
+      body {
+        font-family: 'Andika', sans-serif;
+      }
+      video#bgvid {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        /*background: url(polina.jpg) no-repeat;*/
+        background-size: cover;
+      }
+      footer {
+        display: none;
+        color: #251F14;
+        font-size: .75em;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background-color: #FFDD1B;
+        padding: 3px;
+        text-transform: uppercase;
+      }
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #369;
+      }
+      header {
+        display: none;
+        color: white;
+        text-transform: uppercase;
+
+      }
+      h1 {
+        font-family: 'Andika', sans-serif;
+        font-size: 2em;
+        -webkit-animation: neonBlue 1.5s ease-in-out infinite alternate;
+        -moz-animation: neonBlue 1.5s ease-in-out infinite alternate;
+        animation: neonBlue 1.5s ease-in-out infinite alternate;
+      }
+      span {
+        display: block;
+        position: fixed;
+      }
+      span:nth-child(1) {
+        right: 120px;
+        top: 55px;
+        -webkit-transform: rotate(-9deg);
+        -moz-transform: rotate(-9deg);
+        transform: rotate(-9deg);
+      }
+      span:nth-child(2) {
+        right: 30px;
+        top: 90px;
+        -webkit-transform: rotate(-3deg);
+        -moz-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+      }
+      span:nth-child(3) {
+        right: 150px;
+        top: 140px;
+        font-size: 1.4rem;
+        -webkit-transform: rotate(-13deg);
+        -moz-transform: rotate(-13deg);
+        transform: rotate(-13deg);
+      }
+      span:nth-child(4) {
+        right: 93px;
+        top: 143px;
+        font-size: 1.4rem;
+        -webkit-transform: rotate(7deg);
+        -moz-transform: rotate(7deg);
+        transform: rotate(7deg);
+      }
+      span:nth-child(5) {
+        right: 40px;
+        top: 178px;
+        -webkit-transform: rotate(6deg);
+        -moz-transform: rotate(6deg);
+        transform: rotate(6deg);
+        -webkit-animation: neonViolet 1.5s ease-in-out infinite alternate;
+        -moz-animation: neonViolet 1.5s ease-in-out infinite alternate;
+        animation: neonViolet 1.5s ease-in-out infinite alternate;
+      }
+      @keyframes neonViolet {
+        from {
+          text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px #ff00de, 0 0 28px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 70px #ff00de;
+        }
+        to {
+          text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #ff00de, 0 0 14px #ff00de, 0 0 20px #ff00de, 0 0 25px #ff00de, 0 0 35px #ff00de;
+        }
+      }
+      @keyframes neonBlue {
+        from {
+          text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px #fff, 0 0 16px #228DFF, 0 0 28px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 70px #228DFF;
+        }
+        to {
+          text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #fff, 0 0 8px #228DFF, 0 0 14px #228DFF, 0 0 20px #228DFF, 0 0 25px #228DFF, 0 0 35px #228DFF;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><span>Tony</span><span>Pushes</span><span>To</span><span>The</span><span>Limit</span></h1>
+    </header>
+    <video autoplay loop id="bgvid">
+      <source src="Scarface End Scene (Push it to the Limit).mp4" type="video/mp4">
+    </video>
+    <footer>Video via <a href="https://www.youtube.com/watch?v=QE3D3TEZDD4">Tim Leifheit</a></footer>
+  </body>
+</html>
